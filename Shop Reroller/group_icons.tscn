@@ -1,0 +1,166 @@
+[gd_scene load_steps=9 format=3 uid="uid://1883qsrhuprl"]
+
+[ext_resource type="Texture2D" uid="uid://bqxckhjfuncey" path="res://Sprites/ButtonMask.png" id="1_2ywrc"]
+[ext_resource type="Texture2D" uid="uid://dppysswgwdjvv" path="res://Sprites/Insom.png" id="2_so78y"]
+[ext_resource type="Texture2D" uid="uid://df4yhvml8cy7i" path="res://Sprites/LunSquad.png" id="3_mc65p"]
+[ext_resource type="Texture2D" uid="uid://i8lcmmxesdt1" path="res://Sprites/moist.png" id="4_5e8en"]
+[ext_resource type="Texture2D" uid="uid://cvvrotvax0x74" path="res://Sprites/gamer.png" id="5_7h3dy"]
+[ext_resource type="Texture2D" uid="uid://c7wlq4bt5lu6v" path="res://Sprites/shark.png" id="6_xjiwv"]
+[ext_resource type="Texture2D" uid="uid://diq6dyecgdqfr" path="res://Sprites/cat.png" id="7_n01l3"]
+[ext_resource type="Texture2D" uid="uid://v00p1fr4vny" path="res://Sprites/green.png" id="8_nqav5"]
+
+[node name="Group Icons" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.657143
+anchor_right = 1.0449
+anchor_bottom = 1.03896
+offset_left = 59.9999
+offset_right = 455.0
+offset_bottom = 80.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="iconContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="insomIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/insomIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_so78y")
+
+[node name="lunaIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/lunaIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_mc65p")
+
+[node name="moistIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/moistIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_5e8en")
+
+[node name="gamerIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/gamerIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_7h3dy")
+
+[node name="sharkIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/sharkIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("6_xjiwv")
+
+[node name="catIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/catIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("7_n01l3")
+
+[node name="greenIcon" type="TextureRect" parent="HBoxContainer/iconContainer"]
+clip_children = 1
+layout_mode = 2
+texture = ExtResource("1_2ywrc")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/iconContainer/greenIcon"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("8_nqav5")
+
+[node name="textContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="insomLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 34
+text = "1/11"
+horizontal_alignment = 1
+
+[node name="lunarLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "1/6"
+horizontal_alignment = 1
+
+[node name="moistLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "1/8"
+horizontal_alignment = 1
+
+[node name="gamerLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "1/6"
+horizontal_alignment = 1
+
+[node name="sharkLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "1/2"
+horizontal_alignment = 1
+
+[node name="catLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "1/4"
+horizontal_alignment = 1
+
+[node name="greenLabel" type="Label" parent="HBoxContainer/textContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "1/4"
+horizontal_alignment = 1

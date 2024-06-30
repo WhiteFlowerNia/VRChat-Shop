@@ -1,0 +1,86 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkdq08vynx42f"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_evotr"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_evotr")
+
+[node name="TextureRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.27451, 0.517647, 0.521569, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -145.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+text = "Play"
+
+[node name="Spacer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="Spacer"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 60.0
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 80
+text = "VRChat Shop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Goal" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -636.0
+offset_top = 83.0
+offset_right = -60.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Goal: Collect everyone from each group!"
+
+[node name="Rules" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -638.0
+offset_top = 157.0
+offset_right = 189.0
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Ending the turn will give you a bonus +1 Dollar for every 10 Dollars you have!
+If you run out of time, or your Current Score is lower than the Needed Score, you lose!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
